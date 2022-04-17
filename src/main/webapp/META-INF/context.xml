@@ -1,0 +1,13 @@
+<Context>
+     
+    <ResourceLink name="jdbc/sourcedb"
+    global="jdbc/sourcedb"
+    type="javax.sql.DataSource"
+    />   
+    
+    <ResourceLink name="jdbc/destinationdb"
+    global="jdbc/destinationdb"
+    type="javax.sql.DataSource"
+    />
+     
+</Context>

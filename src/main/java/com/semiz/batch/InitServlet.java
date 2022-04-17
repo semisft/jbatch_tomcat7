@@ -1,6 +1,7 @@
 package com.semiz.batch;
 
 import java.io.IOException;
+import java.util.Properties;
 
 import javax.batch.operations.JobOperator;
 import javax.batch.runtime.BatchRuntime;
@@ -45,7 +46,10 @@ public class InitServlet extends HttpServlet {
 		String jobId = "hellojob";
 		JobOperator jobOperator = BatchRuntime.getJobOperator();
 		System.out.println("start jobId=" + jobId);
-		long executionId = jobOperator.start(jobId, null);
+		Properties jobParameters = new Properties();
+		jobParameters.put("start", "1");
+		jobParameters.put("end", "100");
+		long executionId = jobOperator.start(jobId, jobParameters);
 		System.out.println("executionId=" + executionId);
 	}
 

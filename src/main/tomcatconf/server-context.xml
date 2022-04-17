@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+ 
+ 
+<Context>
+
+    <Resource name="jdbc/sourcedb" auth="Container" type="javax.sql.DataSource"
+               maxActive="10" maxIdle="10" maxWait="15000"
+               username="" password="" driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+               url="jdbc:derby:sourcedb;create=true"/>
+
+   <Resource name="jdbc/destinationdb" auth="Container" type="javax.sql.DataSource"
+               maxActive="10" maxIdle="10" maxWait="15000"
+               username="" password="" driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+               url="jdbc:derby:destinationdb;create=true"/>
+
+</Context>

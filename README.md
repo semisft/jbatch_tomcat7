@@ -17,5 +17,8 @@ Call services at http://localhost:8080/batch/jbatch/rest/
 ie. start job: curl http://localhost:8080/batch/jbatch/rest/start/hellojob
 ![REST service](restservice.png?raw=true "REST service")
 
+How to run
+==
+mvn clean install tomcat7:run
 
 Inspired from: https://nozaki.me/roller/kyle/entry/using-apache-batchee-s-jax
