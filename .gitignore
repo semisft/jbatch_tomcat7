@@ -85,3 +85,6 @@ nb-configuration.xml
 RUNTIMEDB/
 target/
 derby.log
+RUNTIMEDB/
+destinationdb/
+sourcedb/
